@@ -1,0 +1,21 @@
+E - Commerce
+
+
+| **Category**    | **Metric**                           | **Explanation**                                                                         |
+| --------------- | ------------------------------------ | --------------------------------------------------------------------------------------- |
+| **Operations**  | **Order Fulfillment Rate**           | % of orders delivered on time. Formula: `Delivered Orders / Total Orders`               |
+|                 | **Inventory Turnover**               | How quickly inventory is sold. Formula: `COGS / Avg Inventory`                          |
+| **Finance**     | **Average Order Value (AOV)**        | Average value of an order. Formula: `Total Revenue / Total Orders`                      |
+|                 | **Revenue per Customer**             | Total revenue from each customer. Formula: `Total Revenue / Distinct Customers`         |
+| **Behavior**    | **Cart Abandonment Rate**            | % of users who add to cart but don’t checkout. Formula: `(Carted - Purchased) / Carted` |
+|                 | **Repeat Purchase Rate**             | % of customers who purchased more than once                                             |
+| **Performance** | **Page Load Time**                   | Avg time it takes a page to load                                                        |
+|                 | **Checkout Process Completion Time** | Time from first checkout step to purchase confirmation                                  |
+
+
+
+Track daily sales totals by product category
+Analyze customer purchase history for segmentation
+Calculate average order value (AOV) and customer lifetime value (CLV)
+Monitor product inventory levels
+Evaluate the effectiveness of marketing campaigns
