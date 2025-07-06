@@ -1,1 +1,6 @@
 jupyterlab
+apache-airflow
+requests
+kafka-python
+cassandra-driver
+pyspark

@@ -1,0 +1,84 @@
+docker rm container_id
+
+docker rmi image id
+
+docker ps -a
+
+docker pull image_name // pulls only image
+
+docker run image_name // runs and pull image
+
+docker stop
+
+docker kill
+
+
+docker -it container_id // i - interactive, t - attach terminal
+
+docker -d container_id // detach mode
+
+docker -p container_port:docker_port container_id //port mapping
+
+docker -v path/to/folder:container/folder/path container_id // volume mapping
+
+docker inspect container_id // to get full details
+
+docker logs container_id // to check logs
+
+docker run image:version //version is nothing but tag
+
+docker attach container_id // once you detach from docker container again if you want to attach use this cmd
+
+docker build . -t account_name/app_name //build image from Dockerfile example harry0515/simple-web-app we give account name to push image to docker hub
+
+docker push harry0515/simple-web-app  // push image to docker hub
+
+docker run -e ENV_VAR=VALUE image_name // -e flag to set env variable ex: docker run -e APP_COLOR=RED simple-web-app
+
+docker inspect image_name // you will find environmental variables here in ENV
+
+###### Inside dockerfile ####
+From ubuntu
+RUN some installation cmds
+
+CMD sleep 5  /// runs sleep 5 cmd once it stats container
+
+CMD ["sleep", "5"]  /// another type of syntax or else we can pass cmd using -- docker run image sleep 10
+
+ENTRYPOINT ["sleep"] /// entry point is used to pass cmd you can pass arguments at docker run cmd -- docker run image 10 (no sleep here)
+
+// here docker runs sleep cmd and take default arguments of 5 secs -- want to override it use -- docker run image 10
+case1:
+FROM ubuntu
+
+ENTRYPOINT ["sleep"]
+
+CMD["5"]
+
+docker run --entrypoint sleep2.0 image 10 // here you are overriding sleep cmd to sleep2.0
+
+
+docker run --cpus=0.5 image // wont exceed 50% of cpu resources
+
+docker run --memory=100M image //wont exceed 100M of memory
+
+
+docker run image --network=network_name // 3 types of network bridge(default) each container gets one ip address internal and able to communicate with other containers
+                                        // none no network
+                                        // host directly attaches to the docker host(not laptop) network
+
+
+
+// if we want to create 2 networks inside docker default network is 172.17.0.0
+docker network create --driver bridge --subnet 182.18.0.0/16 custom-isolated-network
+
+
+
+
+
+
+
+
+
+
+

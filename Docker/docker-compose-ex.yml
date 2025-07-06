@@ -1,0 +1,31 @@
+version: '3.8'  # or '3', '3.9', etc.
+
+services:
+  service1:
+    image: some-image
+    ports:
+      - "host_port:container_port"
+    environment:
+      - VAR=value
+    volumes:
+      - ./local_path:/container_path
+    depends_on:
+      - another_service
+    networks:
+      - my_network
+
+  service2:
+    build: ./app_folder
+    command: python app.py
+    restart: always
+    environment:
+      VAR2: value2
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  my_data_volume:

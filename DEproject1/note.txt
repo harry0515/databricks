@@ -1,0 +1,9 @@
+connecting to cassandra
+
+docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042  // connecting to cqlsh (cassandra query language shell)
+
+describe spark_streams.created_users
+
+select * from spark_streams.created_users;
+
+spark-submit --master spark://localhost:7077 spark_stream.py
