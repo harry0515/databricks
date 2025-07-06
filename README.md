@@ -1,15 +1,14 @@
 DE and AI/ML repo
 
-DEproject1 : working on streaming data 
-            Complete environment with jar files are build via docker
+DEproject1 : Working on streaming data. 
+            Complete environment with jar files. Build via docker
             
-        users dummy data(api) ---> kafka broker ---> sparkstreaming ---> cassandra
+        users_dummy_data(api) ---> kafka broker ---> sparkstreaming ---> cassandra
                                 |
                                 |
                              Airflow
 
-Docker: notes and example of docker compose file.
+Docker: Notes and example of docker compose file.
 
-DataModeling:
-        Ecommerce platform:
+DataModeling: Ecommerce platform
 
