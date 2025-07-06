@@ -7,3 +7,9 @@ DEproject1 : working on streaming data
                                 |
                                 |
                              Airflow
+
+Docker: notes and example of docker compose file.
+
+DataModeling:
+        Ecommerce platform:
+
